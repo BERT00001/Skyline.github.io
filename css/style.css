@@ -40,6 +40,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+  .jumbotron{
+    background-image: url('images/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -48,6 +54,7 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
+
 
 body {
   margin: 0;
