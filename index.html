@@ -60,6 +60,32 @@ href="images/logo.png">
 </div>
 
 
+<!--Forget password Modal-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Forget Password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <h4 style="text-align: center;"><b>Account Recovery</b></h4><br>
+        <p style="text-align: center;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p><br>
+        <input type="text" class="form-control" placeholder="Email or Phone" required><br>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Reset my Password</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <section class="ftco-section">
 <div class="container">
 <div class="row justify-content-center">
@@ -109,7 +135,7 @@ href="images/logo.png">
 </label>
 </div>
 <div class="w-100 text-md-left">
-<a href="">Forgot Password</a>
+<a href="" data-toggle="modal" data-target="#exampleModal">Forgot Password</a>
 </div>
 </div>
 </form>
