@@ -16,24 +16,30 @@ href="images/logo.png">
 <body>
 
 
-<!-- Just an image -->
-<nav class="navbar navbar-light bg-light">
-  <div  class="container">
-      <img class="upper" 
-        src="images/skyline1.png"
-        height="100"
-        width="300"    
-      />
 
-  </div>
-</nav>
 <style>
   body{
    
-    background-image: url('./images/background22.png');
+   /* background-image: url('./images/background22.png');
     background-size: cover;
+    */
+    background-color: #f0f0f0;
   }
 </style>
+
+
+<!--Navbar-->
+<div style="background-color: whitesmoke">
+<nav class="navbar>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/skyline1.png" alt="Logo" width="300" height="100" class="d-inline-block align-text-top">
+    </a>
+  </div>
+</nav>
+</div>
+
+
 
 <!-- CAROUSEL -->
 <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
@@ -114,7 +120,7 @@ href="images/logo.png">
 <form action="#" class="signin-form">
 <div class="form-group mt-3">
 <input type="text" class="form-control" required>
-<label class="form-control-placeholder" for="username">Username</label>
+<label class="form-control-placeholder" for="username" >Username</label>
 </div>
 <div class="form-group">
 <input id="password-field" type="password" class="form-control" required>
@@ -128,8 +134,10 @@ href="images/logo.png">
 <script type="text/javascript">
   
   function Sign_inbtn(){
-    location.href = "Admin/index.html";
-  }
+
+    location.href = "Admin.html";
+
+    }
 
 </script>
 <div class="form-group d-md-flex">
@@ -157,6 +165,7 @@ href="images/logo.png">
 
 
 
+<h3 style="text-align: center;"></h3><br><br>
 <!-- Footer -->
 <footer class="bg-dark text-center text-white">
   <!-- Grid container -->
