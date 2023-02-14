@@ -145,10 +145,10 @@ href="images/logo.png">
 </div>
 <form action="#" class="signin-form">
 <div class="form-group mt-3">
-<input type="text" class="form-control" placeholder="Email or Phone number" required>
+<input id="Email" type="text" class="form-control" placeholder="Email or Phone number" required>
 </div>
 <div class="form-group">
-<input id="password-field" type="password" class="form-control" placeholder="Password" required>
+<input id="password" type="password" class="form-control" placeholder="Password" required>
 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 </div>
 <div class="form-group">
@@ -160,8 +160,11 @@ href="images/logo.png">
 <script type="text/javascript">
   
   function Sign_inbtn(){
-
-    location.href = "Admin.html";
+let Mail = getElementById("Email").value
+let Pass = getElemenetById("Pass").value
+                                 
+console.log(Mail)
+console.log(Pass)
 
     }
 
