@@ -1,0 +1,126 @@
+@import 'custom-bs.min.css';
+
+/* custom */
+.rounded-2 {
+  border-radius: 0.25rem !important;
+}
+
+.rounded-3 {
+  border-radius: 0.375rem !important;
+}
+
+.rounded-4 {
+  border-radius: 0.5rem !important;
+}
+
+.rounded-5 {
+  border-radius: 0.75rem !important;
+}
+
+.rounded-6 {
+  border-radius: 1rem !important;
+}
+
+.col-break {
+  display: none;
+}
+
+/* --------- */
+
+body {
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, Roboto, Ubuntu, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.bg-img {
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: 75% center;
+}
+
+
+.bg-shape {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: white;
+  background-image: url(../images/background-shape.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center 30%;
+}
+
+.logo-full {
+  display: block;
+  background: transparent url(../images/logo-full.png) center center no-repeat;
+  height: 56px;
+  background-size: contain;
+}
+
+.logo {
+  display: block;
+  background: transparent url(../images/logo.png) center center no-repeat;
+  height: 48px;
+  background-size: contain;
+}
+
+.form-container {
+  min-width: 200px;
+  max-width: 340px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+}
+
+.toggle-btn {
+  width: 48px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.toggle-btn label:hover {
+  opacity: 0.75;
+}
+
+.tab-panels .panel {
+  display: none;
+  width: 100%;
+  opacity: 0;
+}
+.tab-panels .panel.show {
+  opacity: 1;
+  transition: opacity 200ms ease-out;
+}
+
+/* 
+@media screen and (max-width: 767.98px) {
+  
+}
+
+@media screen and (max-width: 479.98px) {
+  
+} */
+
+@media screen and (max-width: 359.98px) {
+  .logo-full {
+    width: 56px;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .col-break {
+    display: block;
+  }
+}

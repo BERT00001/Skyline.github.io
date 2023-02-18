@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title id="page-title">Register | SHMC Appointment</title>
+
+  <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+
+<body>
+  <div class="bg-img"></div>
+  <div id="root">
+    <div class="container-xxl py-4 px-0 px-sm-5">
+
+      <div class="form-container p-4 mx-sm-0 m-auto rounded-5">
+
+        <div class="logo-full mx-auto"></div>
+
+        <form action="#">
+          <h4 class="py-4">Register</h4>
+
+          <div class="row mb-2 gx-3">
+            <div class="col">
+              <label class="form-label mb-1" for="firstname">First name</label>
+              <input class="form-control form-control-sm rounded-3" type="text" name="firstname" id="firstname"
+                required>
+            </div>
+
+            <div class="col-break"></div>
+
+            <div class="col">
+              <label class="form-label mb-1" for="lastname">Last name</label>
+              <input class="form-control form-control-sm rounded-3" type="text" name="lastname" id="lastname" required>
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <label class="form-label mb-1" for="email">Email address</label>
+            <input class="form-control form-control-sm rounded-3" type="email" name="email" id="email" required>
+          </div>
+
+          <div class="mb-2">
+            <label class="form-label mb-1" for="password">Password</label>
+            <div class="input-group input-password">
+              <input class="pass form-control form-control-sm rounded-3" type="password" name="password" id="password"
+                tabindex="2" required>
+
+              <!-- custom toggle visibility btn -->
+              <div class="toggle-btn d-flex justify-content-center">
+                <input class="btn-check" type="checkbox" name="visibility" id="visibility" tabindex="-1"
+                  autocomplete="off">
+                <label class="btn m-auto p-0 text-muted border-0" for="visibility">
+                  <i class="align-middle fa-solid fa-eye-slash"></i>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-2">
+            <p class="small text-muted">By signing up, you agree to our
+              <a href="#">Terms of Service</a>
+              and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+
+          <div class="mb-2 mt-4 row justify-content-between align-items-center">
+
+            <div class="col my-2"></div>
+
+            <div class="col-auto my-2">
+              <input class="btn btn-primary px-4" type="submit" value="Register">
+            </div>
+          </div>
+          <div class="mb-2 mt-5 px-2 text-center small align-middle">
+            <span class="text-muted">Already have an account?</span>
+            <a class="text-decoration-none" href="login.html">
+              <span>Log&nbsp;in</span>
+            </a>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script src="static/js/App.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
